@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body */
+
+body {
+  @apply bg-black text-white;
+}
+
+/* App.css */
+
+.loader-container {
+  @apply flex justify-center items-center h-[100vh];
+}
+
+.loader {
+  @apply border-8 border-solid border-loadcolor border-t-oceanblue w-[80px] h-[80px] rounded-full animate-spin ease-in-out;
+}
+
+/* Sidenav.css */
+
+.sidenav__button {
+  @apply flex flex-row items-center bg-transparent border-none my-[5px] mx-2.5 py-2.5 px-[15px] rounded-[15px] w-full;
+}
+
+.sidenav__button:hover {
+  @apply cursor-default bg-grayish;
+}
+
+.sidenav__icon-wrapper {
+  @apply w-[30px] h-[30px];
+}
+
+.sidenav__button .material-icons.the-icon {
+  @apply text-[24px] mt-[2px] ml-[2px] transition-all duration-150 ease-linear;
+}
+
+.sidenav__button:hover .material-icons.the-icon {
+  @apply text-[28px] mt-0 ml-0 transition-all duration-150 ease-linear;
+}
+
+.sidenav__button span {
+  @apply text-base font-normal ml-2.5;
+}
+
+.sidenav__button .material-icons.the-icon#messages-icon {
+  @apply transform rotate-[-30];
+}
+
